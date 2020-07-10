@@ -27,13 +27,10 @@ section {
     display: flex;
     justify-content: center;
     align-content: center;
-
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 /* -------------- ids -------------- */
@@ -57,6 +54,7 @@ div {
     border-color: grey;
     border-style: solid;
     border-width: thin;
+    text-align: center;
 }
 
 #pesquisa {
@@ -76,16 +74,29 @@ div {
 }
 
 #post {
-    margin: 15px;
-    padding: 15px;
+    margin: 15px 200px;
+    background-color: white;
 }
 
-#id_pagina {
-    font-weight: bolder;
+#inserir_comentario {
+    border-style: none;
+    padding-left: 20px;
+}
+
+#enviar_comentario {
+    border-style: none;
+    color: rgb(126, 173, 226);
+    padding-right: 50px;
 }
 
 
 /* -------------- classes -------------- */
+
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .icone {
     width: 20px;
@@ -100,17 +111,31 @@ div {
     height: 40px;
 }
 
+.perfil_pagina {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
 .comentarios {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
-
+    align-content: space-between;
+    width: 50%;
+    padding-top: 15px;
 }
 
 .mesma_linha {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-content: center;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: small;
+}
+
+.nome_perfil {
+    padding: 10px;
+
 }

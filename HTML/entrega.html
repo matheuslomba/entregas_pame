@@ -12,47 +12,56 @@
 
         <img src="https://i.imgur.com/zqpwkLQ.png" alt="logo instagram" id="logo_instagram"/>
 
-        <div id="pesquisa"> <!-- barra de pesquisa -->
+        <div id="pesquisa" class="centro"> <!-- barra de pesquisa -->
             <img src="svg_entrega/lupa.svg" alt="ícone lupa pesquisa" class="icone"/>
             <input type="text" id="search" placeholder="Pesquisar" />
         </div>
 
-        <div id="icones_pagina"> <!-- link das páginas -->
+        <div id="icones_pagina" class="centro"> <!-- link das páginas -->
             <img src="svg_entrega/home.svg" alt="ícone home" class="icone">
-            <img src="svg_entrega/enviar.png" alt="ícone home" class="icone" style="width: 25px; height: 25px;"> <!-- coloquei style in-line pq achei mais simples que criar uma classe só pra esse caso (o ícone é menor q os outros, aí aumentei)--> 
-            <img src="svg_entrega/bussola.svg" alt="ícone home" class="icone">
-            <img src="svg_entrega/coracao.svg" alt="ícone home" class="icone">
-            <img src="svg_entrega/fotobonita.png" alt="ícone home" class="icone" id="perfil_redonda">
+            <img src="svg_entrega/enviar.png" alt="ícone Compartilhar" class="icone" style="width: 25px; height: 25px;"> <!-- coloquei style in-line pq achei mais simples que criar uma classe só pra esse caso (o ícone é menor q os outros, aí aumentei)--> 
+            <img src="svg_entrega/bussola.svg" alt="ícone bussola" class="icone">
+            <img src="svg_entrega/coracao.svg" alt="ícone like" class="icone">
+            <img src="svg_entrega/fotobonita.png" alt="Foto de Perfil" class="icone" id="perfil_redonda">
         </div>
 
     </header>
 
     <section id="post"> <!-- publicação -->
 
-        <div> <!-- foto  -->
+        <div style="width: 55%;"> <!-- foto  -->
             <img src="svg_entrega/publicacao.png" alt="publicacao 1705">
         </div>
 
         <div class="comentarios"> <!-- comentários -->
             
-            <div class="mesma_linha"> <!-- página -->
-                <img src="https://instagram.fgig4-1.fna.fbcdn.net/v/t51.2885-19/s150x150/75392933_837762413288090_2835895188184891392_n.jpg?_nc_ht=instagram.fgig4-1.fna.fbcdn.net&_nc_ohc=FamK6fwsEMIAX-jPftI&oh=fd9d1f5dec9b65e2dbdaafb99349e15b&oe=5F2FBFEC" alt="logo fluxo" class="img_redonda">
-                <p class="id_pagina">fluxo_ufrj - Seguindo</p>
-                <img src="svg_entrega/mais.svg" alt="reticencias" class="icone">
+            <div>
+                <div class="mesma_linha"> <!-- página -->
+                    <div class="perfil_pagina"> <img src="https://instagram.fgig4-1.fna.fbcdn.net/v/t51.2885-19/s150x150/75392933_837762413288090_2835895188184891392_n.jpg?_nc_ht=instagram.fgig4-1.fna.fbcdn.net&_nc_ohc=FamK6fwsEMIAX-jPftI&oh=fd9d1f5dec9b65e2dbdaafb99349e15b&oe=5F2FBFEC" alt="logo fluxo" class="img_redonda"> <p class="nome_perfil">fluxo_ufrj - Seguindo</p></div>
+                    <img src="svg_entrega/mais.svg" alt="reticencias" class="icone" style="display: flex; justify-content: end;padding-right: 65px;">
+                </div>
+                    
+                <div> <!-- descrição do post -->
+                    <div class="perfil_pagina"> <img src="https://instagram.fgig4-1.fna.fbcdn.net/v/t51.2885-19/s150x150/75392933_837762413288090_2835895188184891392_n.jpg?_nc_ht=instagram.fgig4-1.fna.fbcdn.net&_nc_ohc=FamK6fwsEMIAX-jPftI&oh=fd9d1f5dec9b65e2dbdaafb99349e15b&oe=5F2FBFEC" alt="logo fluxo" class="img_redonda"> <p class="nome_perfil">fluxo_ufrj - Seguindo | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                </div>
             </div>
 
-            <div> <!-- descrição do post -->
+            <div>
+                <div class="mesma_linha"> <!-- ações -->
+                    <div id="icones_pagina" class="centro">
+                        <img src="svg_entrega/coracao.svg" alt="Like" class="icone">
+                        <img src="svg_entrega/comente.svg" alt="Comentários" class="icone">
+                        <img src="svg_entrega/enviar.png" alt="Compartilhar" class="icone"  style="width: 25px; height: 25px;">
+                    </div>
+                    <img src="svg_entrega/save.svg" alt="Salvar Publicação" class="icone"  style="width: 45px; height: 45px; padding-right: 50px;">
+                </div>
 
+                <div class="mesma_linha"> <!-- comentário -->
+                    <input type="text" placeholder="Adicione um comentário..." id="inserir_comentario"/>
+                    <input type="submit" value="Publicar" id="enviar_comentario"/>
+                </div>
             </div>
 
-            <div> <!-- ações -->
-
-            </div>
-
-            <div> <!-- comentário -->
-
-            </div>
-        
         </div>
 
     </section>
