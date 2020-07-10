@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(224, 224, 224);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: flex-start;
+    background-color: white;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -------------- ids -------------- */
+
+#logo_instagram {
+    height: 50px;
+    margin-top: 5px;
+}
+
+#lupa_search {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 10px 5px;
+    padding: 5px;
+}
+
+#search {
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    border-width: thin;
+}
+
+#pesquisa {
+    margin: 3px 5px 0px 5px;
+    padding: 0px 5px;
+}
+
+#icones_pagina {
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+#perfil_redonda {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+#post {
+    margin: 15px;
+    padding: 15px;
+}
+
+#id_pagina {
+    font-weight: bolder;
+}
+
+
+/* -------------- classes -------------- */
+
+.icone {
+    width: 20px;
+    height: 20px;
+    margin: 10px 5px 10px 5px;
+    padding: 5px;
+}
+
+.img_redonda {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+
+}
+
+.mesma_linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
